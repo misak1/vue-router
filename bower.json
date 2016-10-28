@@ -1,0 +1,20 @@
+{
+  "name": "my-first-vue-router",
+  "description": "",
+  "main": "webpack.config.js",
+  "authors": [
+    "m-shibata <misaki.pink@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/hazumu/my-first-vue-router",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

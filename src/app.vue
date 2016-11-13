@@ -678,9 +678,10 @@ export default {
             $(function(){  
             // Menu has active item
             if ($currentItem[0]) {
+                var _$this = $nav.find('li.current-item');
                 $slideLine.css({
-                "width": $currentItem.width(),
-                "left": $currentItem.position().left + parseInt($currentItem.css('marginLeft'))
+                "width": _$this.width(),
+                "left": _$this.position().left + parseInt(_$this.css('marginLeft'))
                 });
             }
             
@@ -697,9 +698,10 @@ export default {
                 function(){
                 if ($currentItem[0]) {
                     // Go back to current
+                    var _$this = $nav.find('li.current-item');
                     $slideLine.css({
-                    "width": $currentItem.width(),
-                    "left": $currentItem.position().left + parseInt($currentItem.css('marginLeft'))
+                    "width": _$this.width(),
+                    "left": _$this.position().left + parseInt(_$this.css('marginLeft'))
                     });
                 } else {
                     // Disapear

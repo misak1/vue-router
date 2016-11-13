@@ -23,10 +23,10 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery'
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: false,
-      mangle: false,
-    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   sourceMap: false,
+    //   mangle: false,
+    // }),
     new webpack.NoErrorsPlugin(),
   ]
 }

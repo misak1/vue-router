@@ -61,17 +61,17 @@
 	    component: __webpack_require__(99)
 	  },
 	  '/foo': {
-	    component: __webpack_require__(106)
+	    component: __webpack_require__(107)
 	  },
 	  '/bar/:id': {
-	    component: __webpack_require__(118)
+	    component: __webpack_require__(119)
 	  },
 	  '/ggg/': {
-	    component: __webpack_require__(128)
+	    component: __webpack_require__(129)
 	  }
 	})
 
-	const App = Vue.extend(__webpack_require__(131))
+	const App = Vue.extend(__webpack_require__(132))
 	router.start(App, '#app')
 
 /***/ },
@@ -12953,7 +12953,7 @@
 
 	__webpack_require__(100)
 	module.exports = __webpack_require__(104)
-	module.exports.template = __webpack_require__(105)
+	module.exports.template = __webpack_require__(106)
 
 
 /***/ },
@@ -13306,504 +13306,6 @@
 
 /***/ },
 /* 104 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	exports['default'] = {
-	  data: function data() {
-	    return {
-	      msg: 'Home'
-	    };
-	  },
-
-	  ready: function ready() {
-	    console.log("home");
-	    this.$dispatch('_locationchange');
-	  }
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 105 */
-/***/ function(module, exports) {
-
-	module.exports = "<div><h1>{{msg}}</h1><div>ここはホーム画面だよ</div></div>";
-
-/***/ },
-/* 106 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(107)
-	module.exports.template = __webpack_require__(117)
-
-
-/***/ },
-/* 107 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _interopRequireDefault = __webpack_require__(77)['default'];
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _componentsAVue = __webpack_require__(108);
-
-	var _componentsAVue2 = _interopRequireDefault(_componentsAVue);
-
-	var _componentsBVue = __webpack_require__(113);
-
-	var _componentsBVue2 = _interopRequireDefault(_componentsBVue);
-
-	exports['default'] = {
-	  data: function data() {
-	    return {
-	      msg: 'This is Foo!'
-	    };
-	  },
-	  components: {
-	    'comp-a': _componentsAVue2['default'],
-	    'comp-b': _componentsBVue2['default']
-	  },
-	  ready: function ready() {
-	    console.log("foo");
-	    this.$dispatch('_locationchange');
-	  }
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 108 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(109)
-	module.exports = __webpack_require__(111)
-	module.exports.template = __webpack_require__(112)
-
-
-/***/ },
-/* 109 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(110);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(103)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./a.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./a.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 110 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(102)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".v-6d67ab4e {\n    border: 1px solid #00f;\n}\n.v-6d67ab4e .red {\n    color: #f00;\n}", ""]);
-
-	// exports
-
-
-/***/ },
-/* 111 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	exports['default'] = {
-	  data: function data() {
-	    return {
-	      msg: 'Hello from Component A!'
-	    };
-	  }
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 112 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"v-6d67ab4e\">\n    <h2 class=\"red\">{{msg}}</h2>\n  </div>";
-
-/***/ },
-/* 113 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(114)
-	module.exports.template = __webpack_require__(116)
-
-
-/***/ },
-/* 114 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(115);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(103)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./b.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./b.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 115 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(102)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".v-6d75c2cf {\n    border: 1px solid #f00;\n}\n.v-6d75c2cf h2 {\n    color: #393;\n}", ""]);
-
-	// exports
-
-
-/***/ },
-/* 116 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"v-6d75c2cf\">\n<h2>Hello from Component B!</h2>\n</div>";
-
-/***/ },
-/* 117 */
-/***/ function(module, exports) {
-
-	module.exports = "<div><h1>{{msg}}</h1><comp-b></comp-b><comp-a></comp-a></div>";
-
-/***/ },
-/* 118 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(119)
-	module.exports = __webpack_require__(121)
-	module.exports.template = __webpack_require__(127)
-
-
-/***/ },
-/* 119 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(120);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(103)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./bar.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./bar.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 120 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(102)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "body {\n  font: 100% Helvetica, sans-serif;\n  color: #999;\n}\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 121 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _interopRequireDefault = __webpack_require__(77)['default'];
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _componentsAVue = __webpack_require__(108);
-
-	var _componentsAVue2 = _interopRequireDefault(_componentsAVue);
-
-	var _componentsModalVue = __webpack_require__(122);
-
-	var _componentsModalVue2 = _interopRequireDefault(_componentsModalVue);
-
-	exports['default'] = {
-	  data: function data() {
-	    return {
-	      msg: 'This is Bar!',
-	      id: this.$route.params.id
-	    };
-	  },
-	  components: {
-	    'comp-a': _componentsAVue2['default'],
-	    'my-modal': _componentsModalVue2['default']
-	  },
-	  methods: {
-	    openModal: function openModal() {
-	      this.$broadcast('open-modal', this);
-	    }
-	  },
-
-	  ready: function ready() {
-	    console.log("bar");
-	    this.$dispatch('_locationchange');
-	  }
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 122 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(123)
-	module.exports = __webpack_require__(125)
-	module.exports.template = __webpack_require__(126)
-
-
-/***/ },
-/* 123 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(124);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(103)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./modal.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./modal.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 124 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(102)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".v-496f2d1a {\n    border: 1px solid #000;\n    position: absolute;\n    top: 200px;\n    left: 50%;\n    margin-left: -150px;\n    width: 300px;\n    height: 300px;\n    background-color: #fff;\n}", ""]);
-
-	// exports
-
-
-/***/ },
-/* 125 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	exports['default'] = {
-	  data: function data() {
-	    return {
-	      title: 'モーダルだよ',
-	      isShown: false
-	    };
-	  },
-	  created: function created() {
-	    var _this = this;
-
-	    this.$on('open-modal', function () {
-	      _this.open();
-	    });
-	  },
-	  methods: {
-	    open: function open() {
-	      this.isShown = true;
-	    },
-	    close: function close() {
-	      this.isShown = false;
-	    },
-	    commit: function commit() {
-	      this.close();
-	    }
-	  }
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 126 */
-/***/ function(module, exports) {
-
-	module.exports = "<div v-show=\"isShown\" class=\"modal v-496f2d1a\"><div>{{title}}</div><div>なかみ</div><button v-on=\"click:commit\">閉じる</button></div>";
-
-/***/ },
-/* 127 */
-/***/ function(module, exports) {
-
-	module.exports = "<div><h1>{{msg}}</h1><div>id - {{id}}</div><comp-a></comp-a><my-modal></my-modal><button v-on=\"click:openModal\">モーダルを開く</button></div>";
-
-/***/ },
-/* 128 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(129)
-	module.exports.template = __webpack_require__(130)
-
-
-/***/ },
-/* 129 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _interopRequireDefault = __webpack_require__(77)['default'];
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _componentsAVue = __webpack_require__(108);
-
-	var _componentsAVue2 = _interopRequireDefault(_componentsAVue);
-
-	var _componentsBVue = __webpack_require__(113);
-
-	var _componentsBVue2 = _interopRequireDefault(_componentsBVue);
-
-	exports['default'] = {
-	  data: function data() {
-	    return {
-	      msg: 'support!'
-	    };
-	  },
-	  components: {
-	    'comp-a': _componentsAVue2['default'],
-	    'comp-b': _componentsBVue2['default']
-	  },
-	  ready: function ready() {
-	    console.log("ggg");
-	    this.$dispatch('_locationchange');
-	  }
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 130 */
-/***/ function(module, exports) {
-
-	module.exports = "<div><h1>{{msg}}</h1><comp-b></comp-b><comp-a></comp-a></div>";
-
-/***/ },
-/* 131 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(132)
-	module.exports = __webpack_require__(134)
-	module.exports.template = __webpack_require__(136)
-
-
-/***/ },
-/* 132 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(133);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(103)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./app.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./app.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 133 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(102)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "/* reset */\nhtml,\nbody,\n#app {\n  height: 100%;\n  font-family: sans-serif;\n}\n/* vue style */\n/*.v-link-active{\n  color: red;\n}*/\n[v-cloak] {\n  display: none;\n}\n/* FileZilla風レイアウト */\nbody {\n  margin: 0px;\n  background: none 0px 0px repeat scroll #efefef;\n  overflow: hidden;\n  position: relative;\n  margin: 0px;\n  padding: 0px;\n  background-color: #292929 !important;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 1.42857;\n  color: #333;\n  background-color: #fff;\n}\ndiv {\n  margin: 0px;\n  padding: 0px;\n}\n#div_C {\n  background-color: #ebebeb !important;\n  position: relative;\n}\n#LeftPanel {\n  width: 80%;\n  float: left;\n}\n#RightPanel {\n  width: 20%;\n  float: right;\n}\n.handler_vertical {\n  cursor: col-resize;\n  width: 8px;\n  float: left;\n}\n.handler_horizontal {\n  cursor: row-resize;\n  height: 8px;\n  width: 100%;\n  float: left;\n}\n.window {\n  border: 1px solid #adadad;\n  width: 100%;\n  float: left;\n  box-sizing: border-box;\n  overflow: auto;\n}\n.top {\n  height: 100%;\n  position: relative;\n  background-color: #ebebeb;\n}\n.main {\n  height: 100%;\n}\n#content-header {\n  overflow-x: auto;\n  background: #fff;\n  height: 80px;\n  padding: 15px 0;\n  box-sizing: border-box;\n}\n#content {\n  height: 80%;\n}\n#content-footer {\n  height: 100px;\n  border: 1px solid #0f0f0f;\n  padding-bottom: 50px;\n}\n.consolePanelMenu {\n  height: 35px;\n  width: 100%;\n  display: table;\n}\n.consolePanelMenu .btn-group-sm {\n  margin: 2px 2px 0px;\n}\n.consolePanelMenu .btn-group-sm.console-btn-group {\n  margin: 10px 2px 0px 10px;\n}\n#consolePanel .layer-panel {\n  background-color: #292929;\n  padding: 4px 10px;\n  box-sizing: border-box;\n}\n.layer-panel {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  padding: 4px;\n  box-sizing: border-box;\n}\n.triangle-top {\n  width: 0px;\n  height: 0px;\n  border-style: solid;\n  border-width: 0px 4px 4px;\n  border-color: transparent transparent #fff;\n  line-height: 0px;\n}\n.triangle-right {\n  display: inline-block;\n  width: 0px;\n  height: 0px;\n  border-style: solid;\n  border-width: 4px 0px 4px 4px;\n  border-color: transparent transparent transparent #fff;\n  line-height: 0;\n}\n.triangle-left {\n  display: inline-block;\n  width: 0px;\n  height: 0px;\n  border-style: solid;\n  border-width: 4px 4px 4px 0px;\n  border-color: transparent #fff transparent transparent;\n  line-height: 0;\n}\n.hideRight #LeftPanel {\n  width: 100% !important;\n}\n.hideLeft #RightPanel {\n  width: 100% !important;\n}\n#btnShowFooter {\n  position: absolute;\n  bottom: 0px;\n  left: 50%;\n  display: none;\n  width: 52px;\n  height: 23px;\n  background: #333;\n  border-radius: 3px 3px 0px 0px;\n  border-width: 1px 1px 0px;\n  border-top-style: solid;\n  border-right-style: solid;\n  border-left-style: solid;\n  border-top-color: #fff;\n  border-right-color: #fff;\n  border-left-color: #fff;\n  border-image: initial;\n  border-bottom-style: initial;\n  border-bottom-color: initial;\n  margin-left: -25px;\n  text-align: center;\n  box-sizing: border-box;\n}\n#btnShowFooter a {\n  color: #fff;\n  display: block;\n  margin-top: -8px;\n  cursor: pointer;\n}\n#btnShowLeft {\n  position: absolute;\n  top: 50%;\n  left: 0px;\n  display: none;\n  width: 23px;\n  height: 52px;\n  background: #333;\n  border-radius: 0px 3px 3px 0px;\n  border-width: 1px 1px 1px 0px;\n  border-top-style: solid;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-top-color: #fff;\n  border-right-color: #fff;\n  border-bottom-color: #fff;\n  border-image: initial;\n  border-left-style: initial;\n  border-left-color: initial;\n  text-align: center;\n  box-sizing: border-box;\n}\n#btnShowLeft a {\n  color: #fff;\n  display: block;\n  cursor: pointer;\n  height: 100%;\n}\n#btnShowRight {\n  position: absolute;\n  top: 50%;\n  right: 0px;\n  display: none;\n  width: 23px;\n  height: 52px;\n  background: #333;\n  border-radius: 3px 0px 0px 3px;\n  border-width: 1px 0px 1px 1px;\n  border-top-style: solid;\n  border-bottom-style: solid;\n  border-left-style: solid;\n  border-top-color: #fff;\n  border-bottom-color: #fff;\n  border-left-color: #fff;\n  border-image: initial;\n  border-right-style: initial;\n  border-right-color: initial;\n  text-align: center;\n  box-sizing: border-box;\n}\n#btnShowRight a {\n  color: #fff;\n  display: block;\n  cursor: pointer;\n  height: 100%;\n}\n#btnShowLeft .triangle-right,\n#btnShowRight .triangle-left {\n  margin-top: 19px;\n}\n.textareamodal {\n  position: fixed;\n  z-index: 1060;\n  width: 100%;\n  height: 100%;\n  background: rgba(0,0,0,0.702);\n  top: 0px;\n  left: 0px;\n  display: none;\n}\n.textareamodal-dialog {\n  background: #fff;\n  position: relative;\n  top: 50%;\n  left: 50%;\n  height: 482px;\n  margin-top: -241px;\n  width: 600px;\n  margin-left: -300px;\n  text-align: center;\n  padding: 37px 30px;\n}\n.textareamodal-dialog-textarea {\n  width: 100%;\n  height: 310px;\n  resize: none;\n  line-height: 1.2;\n  font-size: 12px;\n  padding: 4px;\n}\n.textareamodal-dialog-close {\n  position: absolute;\n  top: 20px;\n  right: 20px;\n}\n.textareamodal-dialog-close a {\n  color: #148fcc;\n}\n.textareamodal-dialog-title {\n  font-size: 24px;\n  font-weight: bold;\n  margin: 0px 0px 18px;\n}\n/* navi */\n#navigation {\n  position: relative;\n/*background-color: #fff;\n  box-shadow: 0 0 12px rgba(0, 0, 0, 0.26);*/\n}\n#navigation ul li {\n  display: inline-block;\n}\n#navigation ul li a {\n  display: inline-block;\n  margin: 0;\n  font-size: 16px;\n  text-decoration: none;\n}\n#navigation ul li.current-item a {\n  color: #999;\n}\n#navigation #slide-line {\n  position: absolute;\n  bottom: 0;\n  height: 2px;\n  background-color: #000;\n  -webkit-transition: all 0.3s ease;\n  transition: all 0.3s ease;\n}\n/* /navi */\n/* footer */\n#content-footer .consolePanelMenu {\n  color: #fff;\n}\n#content-footer .consolePanelMenu a {\n  cursor: pointer;\n}\n#content-footer .consolePanelMenu a:hover {\n  filter: brightness(1.1);\n}\n#content-footer .consolePanelMenu {\n  height: 35px;\n  width: 100%;\n  display: table;\n}\n#content-footer .consolePanelMenu .btn-group-sm.console-btn-group {\n  margin: 10px 2px 0 10px;\n}\n#content-footer #consolePanel {\n  width: 100%;\n  height: 100%;\n  padding-bottom: 50px;\n}\n#content-footer #consolePanel textarea,\n#content-footer #consolePanel .div-textarea {\n  height: 100%;\n  font-family: Osaka-mono, \"MS Gothic\", monospace;\n  padding: 0 8px;\n  background-color: #0f0f0f;\n  color: #b2b2b2;\n  -webkit-font-smoothing: antialiased;\n  letter-spacing: 0.1em;\n  line-height: 1em;\n}\n#content-footer #consolePanel .div-textarea div {\n  white-space: pre-wrap;\n}\n#content-footer .console-btn-group a {\n  margin-left: 15px;\n}\n#content-footer .console-btn-group a:first-child {\n  margin-left: 0;\n}\n#content-footer .layer-wrap {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n#content-footer .layer-panel.is-current {\n  display: block;\n}\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -13814,324 +13316,25 @@
 	exports['default'] = {
 	  data: function data() {
 	    return {
-	      loading: false
+	      title: '通常設定'
 	    };
-	  },
-
-	  created: function created() {
-	    this.$on('_locationchange', function () {
-	      //console.log('_locationchange');
-	      //console.log(location.pathname);
-
-	      var comp1 = location.pathname.split('/');
-	      if (comp1.length >= 2) {
-	        var idx = 0;
-	        $.each($('#navigation a'), function (i, v) {
-	          var comp2 = v.getAttribute('href').split('/');
-	          if (comp2.length >= 2 && comp1[1] == comp2[1]) {
-	            idx = i;
-	          }
-	        });
-	        $('#navigation li').removeClass('current-item').eq(idx).addClass('current-item');
-	      }
-	    });
 	  },
 
 	  ready: function ready() {
-	    /**
-	    * FileZilla風レイアウト
-	    */
-	    $(function () {
-	      window.onresize = resize;
-	      //window.onload = resize;
-	      resize();
-	      //console.log('resize');
-	      $.resizable('div_vertical', "v");
-	      $.resizable('div_right', "h");
-	      $.resizable('div_left', "h");
-	    });
-
-	    var $content = $("#content");
-	    var headerHeight = $('#content-header').height();
-	    var content_margin_side = 30;
-	    var footer_margin_bottom = 5;
-	    var border_width_x4 = parseInt($('.window.top').css('border-left-width')) * 2 + parseInt($('.window.top').css('border-right-width')) * 2;
-	    var divHeight = $("#div_left").height();
-	    var winHeight;
-
-	    var floatFormat = function floatFormat(number, n) {
-	      var _pow = Math.pow(10, n);
-
-	      return Math.ceil(number * _pow) / _pow;
-	    };
-
-	    var resize = function resize(isVertical) {
-	      var _verticalResize = isVertical || false;
-	      if (typeof _verticalResize !== 'boolean') {
-	        _verticalResize = false;
-	      }
-
-	      if ($content.hasClass('is-Single')) {
-	        // //console.log('not resize');
-	        return true;
-	      }
-	      winHeight = window.innerHeight || window.document.documentElement.clientHeight || window.document.body.clientHeight;
-
-	      var ratio = floatFormat($content.height() / winHeight, 2);
-	      //var panelHeight = Math.ceil((winHeight - divHeight) * ratio);
-	      var panelHeight = Math.round((winHeight - divHeight) * ratio);
-
-	      $("#content").css({
-	        "min-height": panelHeight
-	      });
-	      $("#div_vertical").css({
-	        "height": panelHeight
-	      });
-	      $("#LeftPanel").css({
-	        "height": panelHeight - divHeight
-	      });
-
-	      // var content_width = $("#content").width();
-	      var content_width = $("body").width(); // DebToolの表示時に正しい値が取れない為
-	      var RightPanelWidth = content_width - $("#LeftPanel").width() - $("#div_vertical").width() - border_width_x4;
-	      if (_verticalResize) {
-	        $("#RightPanel").css({
-	          "height": panelHeight - divHeight
-	        });
-	      } else {
-	        $("#RightPanel").css({
-	          "height": panelHeight - divHeight,
-	          "width": RightPanelWidth
-	        });
-	        // 念のため
-	        var LeftPanelWidth = content_width - $("#RightPanel").width() - $("#div_vertical").width() - border_width_x4;
-	        $("#LeftPanel").css({
-	          "width": LeftPanelWidth
-	        });
-	      }
-	      $("#content-footer").height(winHeight - (headerHeight + panelHeight + footer_margin_bottom));
-	    };
-	    $('#btnShowFooter a').on('click', function () {
-	      footerShow(true);
-	      setTimeout(function () {
-	        // skipW = true;
-	        // window.resize();
-	        resize(true);
-	      }, 300);
-	    });
-	    $('#btnShowRight a').on('click', function () {
-	      leftPanelShow(true);
-	      setTimeout(function () {
-	        resize();
-	      }, 300);
-	    });
-	    $('#btnShowLeft a').on('click', function () {
-	      rightPanelShow(true);
-	      setTimeout(function () {
-	        resize();
-	      }, 300);
-	    });
-	    var leftPanelShow = function leftPanelShow(isShow) {
-	      setTimeout(function (isShow) {
-	        if (!isShow) {
-	          $("#div_vertical, #RightPanel").hide();
-	          $("#LeftPanel").css({ width: '100%' });
-	          $('#btnShowRight').css({ display: 'inline-block' });
-	          $('html').addClass('hideRight');
-	        } else {
-	          $("#LeftPanel").css({ width: '80%' });
-	          $("#RightPanel").css({ width: '20%' });
-	          $("#div_vertical, #RightPanel").show();
-	          $('#btnShowRight').hide();
-	          $('html').removeClass('hideRight');
-	        }
-	      }, 300, isShow);
-	    };
-	    var rightPanelShow = function rightPanelShow(isShow) {
-	      setTimeout(function (isShow) {
-	        if (!isShow) {
-	          $("#div_vertical, #LeftPanel").hide();
-	          $("#RightPanel").css({ width: '100%' });
-	          $('#btnShowLeft').css({ display: 'inline-block' });
-	          $('html').addClass('hideLeft');
-	        } else {
-	          $("#RightPanel").css({ width: '80%' });
-	          $("#LeftPanel").css({ width: '20%' });
-	          $("#div_vertical, #LeftPanel").show();
-	          $('#btnShowLeft').hide();
-	          $('html').removeClass('hideLeft');
-	        }
-	      }, 300, isShow);
-	    };
-
-	    var footerShow = function footerShow(isShow) {
-	      setTimeout(function (isShow) {
-	        if (!isShow) {
-	          $("#content-footer").hide();
-	          $("#content").css({ minHeight: '', height: '100%' });
-	          $("#LeftPanel, #RightPanel").css({ height: '100%' });
-	          $('#btnShowFooter').css({ display: 'inline-block' });
-	          $('html').addClass('hideFooter');
-	        } else {
-	          $("#content-footer").show();
-	          $("#content").css({ minHeight: '80%', height: '80%' });
-	          $("#LeftPanel, #RightPanel").css({ height: '80%' });
-	          $('#btnShowFooter').hide();
-	          $('html').removeClass('hideFooter');
-	        }
-	      }, 300, isShow);
-	    };
-
-	    $.resizable = function (resizerID, vOrH) {
-	      //console.log("resizable");
-	      $('#' + resizerID).bind("mousedown", function (e) {
-	        var start = vOrH === 'v' ? e.pageX : e.pageY;
-	        var height = $content.height();
-	        var leftwidth = $('#' + resizerID).prev().width();
-	        var rightwidth = $('#' + resizerID).next().width();
-
-	        var mouseMove = function mouseMove(e) {
-	          var end = vOrH === 'v' ? e.pageX : e.pageY;
-	          if (vOrH == 'h') {
-	            // タテ
-	            var newHeight = height + (end - start);
-	            if (newHeight > content_margin_side || newHeight < 0) {
-	              $content.height(newHeight);
-
-	              $("#content").css({
-	                "min-height": newHeight
-	              });
-	              $("#div_vertical").css({
-	                "height": newHeight
-	              });
-	              $("#LeftPanel, #RightPanel").css({
-	                "height": newHeight - divHeight
-	              });
-	              $("#content-footer").height(winHeight - (headerHeight + newHeight + footer_margin_bottom));
-	            }
-	          } else {
-	            // ヨコ
-	            var newLeftWidth = leftwidth + (end - start);
-	            var newRightWidth = rightwidth - (end - start);
-
-	            // //console.log(newRightWidth);
-	            // 段落ち対策
-	            if (content_margin_side < newLeftWidth && newRightWidth > content_margin_side) {
-	              $('#' + resizerID).prev().width(newLeftWidth);
-	              $('#' + resizerID).next().width(newRightWidth);
-	            } else {
-	              // //console.log("holizontal-over");
-	            }
-	          }
-	        };
-	        document.addEventListener('mouseup', function (e) {
-	          // var start = vOrH === 'v' ? e.pageX : e.pageY;
-	          // var height = $content.height();
-	          // var leftwidth = $('#' + resizerID).prev().width();
-	          // var rightwidth = $('#' + resizerID).next().width();
-	          // var end = vOrH === 'v' ? e.pageX : e.pageY;
-	          // //console.log('mouseup', e.pageX , e.pageY)
-
-	          if ($content.height() > $(window).height() - $('#content-header').height() - 40) {
-	            // //console.log("vertical-over");
-	            e.preventDefault(); // drag キャンセル
-	            footerShow(false);
-	          }
-	          var newRightWidth = $('#div_right').prev().width();
-	          var newLeftWidth = $('#div_left').prev().width();
-
-	          e.preventDefault(); // drag キャンセル
-	          // //console.log('newLeftWidth',newLeftWidth,"newRightWidth", newRightWidth, "content_margin_side", content_margin_side);
-	          if (newRightWidth <= content_margin_side + 20) {
-	            leftPanelShow(false);
-	          } else if (newLeftWidth <= content_margin_side + 20) {
-	            rightPanelShow(false);
-	          }
-	          // //console.log("holizontal-over");
-
-	          document.removeEventListener("mousemove", mouseMove);
-	          document.removeEventListener("mouseup", this);
-	        });
-	        document.addEventListener('mousemove', mouseMove);
-	      });
-	    };
-
-	    /**
-	    * navigation
-	    */
-	    $(function () {
-	      var $nav = $("#navigation"),
-	          $slideLine = $("#slide-line"),
-	          $currentItem = $(".current-item");
-
-	      $(function () {
-	        // Menu has active item
-	        if ($currentItem[0]) {
-	          var _$this = $nav.find('li.current-item');
-	          $slideLine.css({
-	            "width": _$this.width(),
-	            "left": _$this.position().left + parseInt(_$this.css('marginLeft'))
-	          });
-	        }
-
-	        // Underline transition
-	        $($nav).find("li").hover(
-	        // Hover on
-	        function () {
-	          $slideLine.css({
-	            "width": $(this).width(),
-	            "left": $(this).position().left + parseInt($(this).css('marginLeft'))
-	          });
-	        },
-	        // Hover out
-	        function () {
-	          if ($currentItem[0]) {
-	            // Go back to current
-	            var _$this = $nav.find('li.current-item');
-	            $slideLine.css({
-	              "width": _$this.width(),
-	              "left": _$this.position().left + parseInt(_$this.css('marginLeft'))
-	            });
-	          } else {
-	            // Disapear
-	            $slideLine.width(0);
-	          }
-	        });
-	      });
-
-	      // 横並び間隔揃え
-	      var max_w = 0;
-	      $.when($.each($('#navigation li'), function () {
-	        var w = $(this).width();
-	        max_w = max_w < $(this).width() ? w : max_w;
-	      })).done(function () {
-	        // 最大幅
-	        // //console.log(max_w);
-	        var new_w = max_w + 20;
-	        $.each($('#navigation li'), function () {
-	          var side = new_w - $(this).width() / 2;
-	          $(this).css({ marginLeft: side + 'px', marginRight: side + 'px' });
-	        });
-	        //   margin-right: 45px;
-	      });
-
-	      if ("onhashchange" in window) {
-	        console.log("お使いのブラウザは hashchange イベントをサポートしています");
-	      }
-
-	      function locationHashChanged() {
-	        //console.log(location.url);
-	      }
-
-	      window.onhashchange = locationHashChanged;
-	    });
+	    console.log("home");
+	    this.$dispatch('_locationchange');
+	    $('#rightContent').html('<p>test<p>');
 	  }
+	  // components: {
+	  //   'comp-a': compA,
+	  //   'comp-b': compB
+	  // },
 	};
 	module.exports = exports['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(135)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(105)))
 
 /***/ },
-/* 135 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -24357,10 +23560,813 @@
 
 
 /***/ },
+/* 106 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"setting\"><h1>{{title}}</h1><fieldset><legend>環境設定</legend><div class=\"field_group\"><!-- p--><!-- label.col-sm-12.control-label PHPパス--><!-- .col-sm-12.uploadButton--><!-- span(style=\"width: 15%;display: inline-block; vertical-align: top;\") ファイルを選択--><!-- input(type=\"file\" id=\"uv1_file\" onchange=\"uv1.style.display='inline-block'; uv1.value = this.value;\" required)--><!-- input(type=\"text\" id=\"uv1\" name='PHP_PATH' class=\"uploadValue\" disabled)--><p><label class=\"col-sm-12 control-label\">Asazukeパス</label><div class=\"col-sm-12 uploadButton\"><span style=\"width: 15%;display: inline-block; vertical-align: top;\">ディレクトリを選択</span><input id=\"uv2_file\" type=\"file\" onchange=\"uv2.style.display='inline-block'; uv2.value = this.value;\" webkitdirectory=\"webkitdirectory\" directory=\"directory\" required=\"required\"/><input id=\"uv2\" type=\"text\" name=\"ASAZUKE_DIR_PATH\" disabled=\"disabled\" class=\"uploadValue\"/></div></p><div class=\"col-sm-12 u-mt10\"><input type=\"button\" value=\"パス変更\" onclick=\"Setting.paths();\" class=\"btn btn-default\"/><input type=\"button\" value=\"Asazukeのインストール\" onclick=\"App.asazuke_install();\" class=\"btn btn-default\"/><input type=\"button\" value=\"Asazukeのアップデート\" onclick=\"App.asazuke_update();\" class=\"btn btn-default js-asazuke-update\"/></div></div></fieldset><fieldset class=\"u-mt10\"><legend>プロジェクト設定</legend><div class=\"field_group\"><h5>プロジェクトを作成</h5><p class=\"new_project\"><input type=\"button\" value=\"新規プロジェクト\" onclick=\"Setting.addProject();\" class=\"btn btn-default\"/></p><h5>既存のプロジェクトから選択</h5><div class=\"form-group\"><label class=\"col-sm-2 control-label\">プロジェクトを選択して下さい。</label><div class=\"col-sm-10\"><select onchange=\"Setting.selectProject($(this).val());\" class=\"form-control js-projectList project_lists\"></select></div></div></div></fieldset><fieldset class=\"setting_target u-mt10\"><legend>解析対象サイト</legend><div class=\"field_group\"><p><label>サイトURL：<input type=\"text\" name=\"SITE_URL\" size=\"40\" value=\"\" placeholder=\"http://www.sample.jp\"/></label></p><p><label>ディレクトリ：<input type=\"text\" name=\"START_PATH\" size=\"40\" value=\"\" placeholder=\"/\"/></label></p><p><label>ユーザ：<input type=\"text\" name=\"AUTH_USER\" size=\"40\" value=\"\" placeholder=\"auth_user\"/></label></p><p><label>パスワード：<input type=\"text\" name=\"AUTH_PASS\" size=\"40\" value=\"\" placeholder=\"auth_password\"/></label></p><div class=\"col-sm-12\"><input type=\"button\" value=\"確定\" onclick=\"Setting.target();\" class=\"btn btn-default\"/></div></div></fieldset><!-- p--><!-- input#setting_modify_all(type='button', value='すべて確定' onclick=\"Setting.all();\")--></div>";
+
+/***/ },
+/* 107 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(108)
+	module.exports.template = __webpack_require__(118)
+
+
+/***/ },
+/* 108 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _interopRequireDefault = __webpack_require__(77)['default'];
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _componentsAVue = __webpack_require__(109);
+
+	var _componentsAVue2 = _interopRequireDefault(_componentsAVue);
+
+	var _componentsBVue = __webpack_require__(114);
+
+	var _componentsBVue2 = _interopRequireDefault(_componentsBVue);
+
+	exports['default'] = {
+	  data: function data() {
+	    return {
+	      msg: 'This is Foo!'
+	    };
+	  },
+	  components: {
+	    'comp-a': _componentsAVue2['default'],
+	    'comp-b': _componentsBVue2['default']
+	  },
+	  ready: function ready() {
+	    console.log("foo");
+	    this.$dispatch('_locationchange');
+	  }
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 109 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(110)
+	module.exports = __webpack_require__(112)
+	module.exports.template = __webpack_require__(113)
+
+
+/***/ },
+/* 110 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(111);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(103)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./a.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./a.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 111 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(102)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".v-2e88cd8a {\n    border: 1px solid #00f;\n}\n.v-2e88cd8a .red {\n    color: #f00;\n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 112 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = {
+	  data: function data() {
+	    return {
+	      msg: 'Hello from Component A!'
+	    };
+	  }
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 113 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"v-2e88cd8a\">\n    <h2 class=\"red\">{{msg}}</h2>\n  </div>";
+
+/***/ },
+/* 114 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(115)
+	module.exports.template = __webpack_require__(117)
+
+
+/***/ },
+/* 115 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(116);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(103)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./b.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./b.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 116 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(102)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".v-2e6c9e88 {\n    border: 1px solid #f00;\n}\n.v-2e6c9e88 h2 {\n    color: #393;\n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 117 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"v-2e6c9e88\">\n<h2>Hello from Component B!</h2>\n</div>";
+
+/***/ },
+/* 118 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"batch-html\"><div class=\"action\"><div class=\"detail-text\">データベースにファイル一覧データを作成します</div><div class=\"toggle-button\"><input id=\"lbl-btn01\" type=\"checkbox\" name=\"check[]\" value=\"1\" onclick=\"$(&quot;#lbl-btn01&quot;).click(function( event ) {event.stopPropagation();$(this).prop(&quot;checked&quot;, true);}); App.execSiteScan();\"/><label for=\"lbl-btn01\" class=\"btn btn-primary\">サイトスキャン</label></div><div role=\"group\" aria-label=\"...\" class=\"btn-group btn-block clearfix\"><!-- button.btn.btn-default(onclick='$(\"#lbl-btn01\").prop(\"checked\", false);') ボタンを戻す--><button onclick=\"App.kill();\" class=\"btn btn-default js-cancel\">処理を中止する</button><button onclick=\"$(this).click(function( event ) {event.stopPropagation(); App.execSiteScanResume();});\" class=\"btn btn-success\">再開する</button></div></div><div class=\"action\"><div class=\"detail-text\">データベースのファイル一覧を使ってHTMLファイルをダウンロードします。</div><div class=\"toggle-button\"><input id=\"lbl-btn02\" type=\"checkbox\" name=\"check[]\" value=\"1\" onclick=\"$(&quot;#lbl-btn02&quot;).click(function( event ) {event.stopPropagation();$(this).prop(&quot;checked&quot;, true);}); App.execSiteValidationEx();\"/><label for=\"lbl-btn02\" class=\"btn btn-primary\">HTMLダウンロード</label></div><div role=\"group\" aria-label=\"...\" class=\"btn-group btn-block clearfix\"><!-- button.btn.btn-default(onclick='$(\"#lbl-btn02\").prop(\"checked\", false);') ボタンを戻す--><button onclick=\"App.kill();\" class=\"btn btn-default js-cancel\">処理を中止する</button><button onclick=\"$(&quot;.header-menu .item&quot;).eq(2).find(&quot;a&quot;).click();\" class=\"btn btn-default\">ダウンロードしたデータを確認する</button></div></div><div class=\"action\"><div class=\"detail-text\">ダウンロードしたHTMLをもとにPickles2用のサイトマップCSVを作成します。</div><div class=\"toggle-button\"><input id=\"lbl-btn03\" type=\"checkbox\" name=\"check[]\" value=\"1\" onclick=\"$(&quot;#lbl-btn03&quot;).click(function( event ) {event.stopPropagation();$(this).prop(&quot;checked&quot;, true);}); App.execSiteValidationCsv();\"/><label for=\"lbl-btn03\" class=\"btn btn-primary\">サイトマップCSV作成</label></div><div role=\"group\" aria-label=\"...\" class=\"btn-group btn-block clearfix\"><!-- button.btn.btn-default(onclick='$(\"#lbl-btn03\").prop(\"checked\", false);') ボタンを戻す--><button onclick=\"App.kill();\" class=\"btn btn-default js-cancel\">処理を中止する</button><button onclick=\"Load.sitemapCSV();\" class=\"btn btn-default\">作成済みのCSVデータを確認する</button></div></div><div class=\"action\"><div class=\"detail-text\">指定したCSSセレクタを元に、HTMLコードの抜き出し（スクレイピング)します。</div><div class=\"toggle-button\"><input id=\"lbl-btn04\" type=\"checkbox\" name=\"check[]\" value=\"1\" onclick=\"$(&quot;#lbl-btn04&quot;).click(function( event ) {event.stopPropagation();$(this).prop(&quot;checked&quot;, true);}); App.execHtmlScraping();\"/><label for=\"lbl-btn04\" class=\"btn btn-primary\">WEBスクレイピング</label></div><div role=\"group\" aria-label=\"...\" class=\"btn-group btn-block clearfix\"><!-- button.btn.btn-default(onclick='$(\"#lbl-btn04\").prop(\"checked\", false);') ボタンを戻す--><button onclick=\"App.kill();\" class=\"btn btn-default js-cancel\">処理を中止する</button><button onclick=\"$(&quot;.header-menu .item&quot;).eq(3).find(&quot;a&quot;).click();\" class=\"btn btn-default\">データを確認する</button><button onclick=\"App.openSiteScan();\" class=\"btn btn-default\">フォルダを開く</button></div></div></div><!-- .btn-group(role='group', aria-label='...')--><!-- button.btn.btn-default(type='button') Left--><!-- button.btn.btn-default(type='button') Middle--><!-- button.btn.btn-default(type='button') Right-->";
+
+/***/ },
+/* 119 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(120)
+	module.exports = __webpack_require__(122)
+	module.exports.template = __webpack_require__(128)
+
+
+/***/ },
+/* 120 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(121);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(103)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./bar.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./bar.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 121 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(102)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "body {\n  font: 100% Helvetica, sans-serif;\n  color: #999;\n}\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 122 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _interopRequireDefault = __webpack_require__(77)['default'];
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _componentsAVue = __webpack_require__(109);
+
+	var _componentsAVue2 = _interopRequireDefault(_componentsAVue);
+
+	var _componentsModalVue = __webpack_require__(123);
+
+	var _componentsModalVue2 = _interopRequireDefault(_componentsModalVue);
+
+	exports['default'] = {
+	  data: function data() {
+	    return {
+	      msg: 'This is Bar!',
+	      id: this.$route.params.id
+	    };
+	  },
+	  components: {
+	    'comp-a': _componentsAVue2['default'],
+	    'my-modal': _componentsModalVue2['default']
+	  },
+	  methods: {
+	    openModal: function openModal() {
+	      this.$broadcast('open-modal', this);
+	    }
+	  },
+
+	  ready: function ready() {
+	    console.log("bar");
+	    this.$dispatch('_locationchange');
+	  }
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 123 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(124)
+	module.exports = __webpack_require__(126)
+	module.exports.template = __webpack_require__(127)
+
+
+/***/ },
+/* 124 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(125);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(103)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./modal.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/stylus-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./modal.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 125 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(102)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".v-07df46f2 {\n    border: 1px solid #000;\n    position: absolute;\n    top: 200px;\n    left: 50%;\n    margin-left: -150px;\n    width: 300px;\n    height: 300px;\n    background-color: #fff;\n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 126 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = {
+	  data: function data() {
+	    return {
+	      title: 'モーダルだよ',
+	      isShown: false
+	    };
+	  },
+	  created: function created() {
+	    var _this = this;
+
+	    this.$on('open-modal', function () {
+	      _this.open();
+	    });
+	  },
+	  methods: {
+	    open: function open() {
+	      this.isShown = true;
+	    },
+	    close: function close() {
+	      this.isShown = false;
+	    },
+	    commit: function commit() {
+	      this.close();
+	    }
+	  }
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 127 */
+/***/ function(module, exports) {
+
+	module.exports = "<div v-show=\"isShown\" class=\"modal v-07df46f2\"><div>{{title}}</div><div>なかみ</div><button v-on=\"click:commit\">閉じる</button></div>";
+
+/***/ },
+/* 128 */
+/***/ function(module, exports) {
+
+	module.exports = "<div><h1>{{msg}}</h1><div>id - {{id}}</div><comp-a></comp-a><my-modal></my-modal><button v-on=\"click:openModal\">モーダルを開く</button></div>";
+
+/***/ },
+/* 129 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(130)
+	module.exports.template = __webpack_require__(131)
+
+
+/***/ },
+/* 130 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _interopRequireDefault = __webpack_require__(77)['default'];
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _componentsAVue = __webpack_require__(109);
+
+	var _componentsAVue2 = _interopRequireDefault(_componentsAVue);
+
+	var _componentsBVue = __webpack_require__(114);
+
+	var _componentsBVue2 = _interopRequireDefault(_componentsBVue);
+
+	exports['default'] = {
+	  data: function data() {
+	    return {
+	      msg: 'support!'
+	    };
+	  },
+	  components: {
+	    'comp-a': _componentsAVue2['default'],
+	    'comp-b': _componentsBVue2['default']
+	  },
+	  ready: function ready() {
+	    console.log("ggg");
+	    this.$dispatch('_locationchange');
+	  }
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 131 */
+/***/ function(module, exports) {
+
+	module.exports = "<div><h1>{{msg}}</h1><comp-b></comp-b><comp-a></comp-a></div>";
+
+/***/ },
+/* 132 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(133)
+	module.exports = __webpack_require__(135)
+	module.exports.template = __webpack_require__(136)
+
+
+/***/ },
+/* 133 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(134);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(103)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./app.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./app.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 134 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(102)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "/* reset */\nhtml,\nbody,\n#app {\n  height: 100%;\n  font-family: sans-serif;\n}\n/* vue style */\n/*.v-link-active{\n  color: red;\n}*/\n[v-cloak] {\n  display: none;\n}\n/* FileZilla風レイアウト */\nbody {\n  margin: 0px;\n  background: none 0px 0px repeat scroll #efefef;\n  overflow: hidden;\n  position: relative;\n  margin: 0px;\n  padding: 0px;\n  background-color: #292929 !important;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 1.42857;\n  color: #333;\n  background-color: #fff;\n}\ndiv {\n  margin: 0px;\n  padding: 0px;\n}\n#div_C {\n  background-color: #ebebeb !important;\n  position: relative;\n}\n#LeftPanel {\n  width: 80%;\n  float: left;\n}\n#RightPanel {\n  width: 20%;\n  float: right;\n}\n.handler_vertical {\n  cursor: col-resize;\n  width: 8px;\n  float: left;\n}\n.handler_horizontal {\n  cursor: row-resize;\n  height: 8px;\n  width: 100%;\n  float: left;\n}\n.window {\n  border: 1px solid #adadad;\n  width: 100%;\n  float: left;\n  box-sizing: border-box;\n  overflow: auto;\n}\n.top {\n  height: 100%;\n  position: relative;\n  background-color: #ebebeb;\n}\n.main {\n  height: 100%;\n}\n#content-header {\n  overflow-x: auto;\n  background: #fff;\n  height: 80px;\n  padding: 15px 0;\n  box-sizing: border-box;\n}\n#content {\n  height: 80%;\n}\n#content-footer {\n  height: 100px;\n  border: 1px solid #0f0f0f;\n  padding-bottom: 50px;\n}\n.consolePanelMenu {\n  height: 35px;\n  width: 100%;\n  display: table;\n}\n.consolePanelMenu .btn-group-sm {\n  margin: 2px 2px 0px;\n}\n.consolePanelMenu .btn-group-sm.console-btn-group {\n  margin: 10px 2px 0px 10px;\n}\n#consolePanel .layer-panel {\n  background-color: #292929;\n  padding: 4px 10px;\n  box-sizing: border-box;\n}\n.layer-panel {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  padding: 4px;\n  box-sizing: border-box;\n}\n.triangle-top {\n  width: 0px;\n  height: 0px;\n  border-style: solid;\n  border-width: 0px 4px 4px;\n  border-color: transparent transparent #fff;\n  line-height: 0px;\n}\n.triangle-right {\n  display: inline-block;\n  width: 0px;\n  height: 0px;\n  border-style: solid;\n  border-width: 4px 0px 4px 4px;\n  border-color: transparent transparent transparent #fff;\n  line-height: 0;\n}\n.triangle-left {\n  display: inline-block;\n  width: 0px;\n  height: 0px;\n  border-style: solid;\n  border-width: 4px 4px 4px 0px;\n  border-color: transparent #fff transparent transparent;\n  line-height: 0;\n}\n.hideRight #LeftPanel {\n  width: 100% !important;\n}\n.hideLeft #RightPanel {\n  width: 100% !important;\n}\n#btnShowFooter {\n  position: absolute;\n  bottom: 0px;\n  left: 50%;\n  display: none;\n  width: 52px;\n  height: 23px;\n  background: #333;\n  border-radius: 3px 3px 0px 0px;\n  border-width: 1px 1px 0px;\n  border-top-style: solid;\n  border-right-style: solid;\n  border-left-style: solid;\n  border-top-color: #fff;\n  border-right-color: #fff;\n  border-left-color: #fff;\n  border-image: initial;\n  border-bottom-style: initial;\n  border-bottom-color: initial;\n  margin-left: -25px;\n  text-align: center;\n  box-sizing: border-box;\n}\n#btnShowFooter a {\n  color: #fff;\n  display: block;\n  margin-top: -8px;\n  cursor: pointer;\n}\n#btnShowLeft {\n  position: absolute;\n  top: 50%;\n  left: 0px;\n  display: none;\n  width: 23px;\n  height: 52px;\n  background: #333;\n  border-radius: 0px 3px 3px 0px;\n  border-width: 1px 1px 1px 0px;\n  border-top-style: solid;\n  border-right-style: solid;\n  border-bottom-style: solid;\n  border-top-color: #fff;\n  border-right-color: #fff;\n  border-bottom-color: #fff;\n  border-image: initial;\n  border-left-style: initial;\n  border-left-color: initial;\n  text-align: center;\n  box-sizing: border-box;\n}\n#btnShowLeft a {\n  color: #fff;\n  display: block;\n  cursor: pointer;\n  height: 100%;\n}\n#btnShowRight {\n  position: absolute;\n  top: 50%;\n  right: 0px;\n  display: none;\n  width: 23px;\n  height: 52px;\n  background: #333;\n  border-radius: 3px 0px 0px 3px;\n  border-width: 1px 0px 1px 1px;\n  border-top-style: solid;\n  border-bottom-style: solid;\n  border-left-style: solid;\n  border-top-color: #fff;\n  border-bottom-color: #fff;\n  border-left-color: #fff;\n  border-image: initial;\n  border-right-style: initial;\n  border-right-color: initial;\n  text-align: center;\n  box-sizing: border-box;\n}\n#btnShowRight a {\n  color: #fff;\n  display: block;\n  cursor: pointer;\n  height: 100%;\n}\n#btnShowLeft .triangle-right,\n#btnShowRight .triangle-left {\n  margin-top: 19px;\n}\n.textareamodal {\n  position: fixed;\n  z-index: 1060;\n  width: 100%;\n  height: 100%;\n  background: rgba(0,0,0,0.702);\n  top: 0px;\n  left: 0px;\n  display: none;\n}\n.textareamodal-dialog {\n  background: #fff;\n  position: relative;\n  top: 50%;\n  left: 50%;\n  height: 482px;\n  margin-top: -241px;\n  width: 600px;\n  margin-left: -300px;\n  text-align: center;\n  padding: 37px 30px;\n}\n.textareamodal-dialog-textarea {\n  width: 100%;\n  height: 310px;\n  resize: none;\n  line-height: 1.2;\n  font-size: 12px;\n  padding: 4px;\n}\n.textareamodal-dialog-close {\n  position: absolute;\n  top: 20px;\n  right: 20px;\n}\n.textareamodal-dialog-close a {\n  color: #148fcc;\n}\n.textareamodal-dialog-title {\n  font-size: 24px;\n  font-weight: bold;\n  margin: 0px 0px 18px;\n}\n/* navi */\n#navigation {\n  position: relative;\n/*background-color: #fff;\n  box-shadow: 0 0 12px rgba(0, 0, 0, 0.26);*/\n}\n#navigation ul li {\n  display: inline-block;\n}\n#navigation ul li a {\n  display: inline-block;\n  margin: 0;\n  font-size: 16px;\n  text-decoration: none;\n}\n#navigation ul li.current-item a {\n  color: #999;\n}\n#navigation #slide-line {\n  position: absolute;\n  bottom: 0;\n  height: 2px;\n  background-color: #000;\n  -webkit-transition: all 0.3s ease;\n  transition: all 0.3s ease;\n}\n/* /navi */\n/* footer */\n#content-footer .consolePanelMenu {\n  color: #fff;\n}\n#content-footer .consolePanelMenu a {\n  cursor: pointer;\n}\n#content-footer .consolePanelMenu a:hover {\n  filter: brightness(1.1);\n}\n#content-footer .consolePanelMenu {\n  height: 35px;\n  width: 100%;\n  display: table;\n}\n#content-footer .consolePanelMenu .btn-group-sm.console-btn-group {\n  margin: 10px 2px 0 10px;\n}\n#content-footer #consolePanel {\n  width: 100%;\n  height: 100%;\n  padding-bottom: 50px;\n}\n#content-footer #consolePanel textarea,\n#content-footer #consolePanel .div-textarea {\n  height: 100%;\n  font-family: Osaka-mono, \"MS Gothic\", monospace;\n  padding: 0 8px;\n  background-color: #0f0f0f;\n  color: #b2b2b2;\n  -webkit-font-smoothing: antialiased;\n  letter-spacing: 0.1em;\n  line-height: 1em;\n}\n#content-footer #consolePanel .div-textarea div {\n  white-space: pre-wrap;\n}\n#content-footer .console-btn-group a {\n  margin-left: 15px;\n}\n#content-footer .console-btn-group a:first-child {\n  margin-left: 0;\n}\n#content-footer .layer-wrap {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n#content-footer .layer-panel.is-current {\n  display: block;\n}\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 135 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = {
+	  data: function data() {
+	    return {
+	      loading: false
+	    };
+	  },
+
+	  created: function created() {
+	    this.$on('_locationchange', function () {
+	      //console.log('_locationchange');
+	      //console.log(location.pathname);
+
+	      var comp1 = location.pathname.split('/');
+	      if (comp1.length >= 2) {
+	        var idx = 0;
+	        $.each($('#navigation a'), function (i, v) {
+	          var comp2 = v.getAttribute('href').split('/');
+	          if (comp2.length >= 2 && comp1[1] == comp2[1]) {
+	            idx = i;
+	          }
+	        });
+	        $('#navigation li').removeClass('current-item').eq(idx).addClass('current-item');
+	      }
+	    });
+	  },
+
+	  ready: function ready() {
+	    /**
+	    * FileZilla風レイアウト
+	    */
+	    $(function () {
+	      window.onresize = resize;
+	      //window.onload = resize;
+	      resize();
+	      //console.log('resize');
+	      $.resizable('div_vertical', "v");
+	      $.resizable('div_right', "h");
+	      $.resizable('div_left', "h");
+	    });
+
+	    var $content = $("#content");
+	    var headerHeight = $('#content-header').height();
+	    var content_margin_side = 30;
+	    var footer_margin_bottom = 5;
+	    var border_width_x4 = parseInt($('.window.top').css('border-left-width')) * 2 + parseInt($('.window.top').css('border-right-width')) * 2;
+	    var divHeight = $("#div_left").height();
+	    var winHeight;
+
+	    var floatFormat = function floatFormat(number, n) {
+	      var _pow = Math.pow(10, n);
+
+	      return Math.ceil(number * _pow) / _pow;
+	    };
+
+	    var resize = function resize(isVertical) {
+	      var _verticalResize = isVertical || false;
+	      if (typeof _verticalResize !== 'boolean') {
+	        _verticalResize = false;
+	      }
+
+	      if ($content.hasClass('is-Single')) {
+	        // //console.log('not resize');
+	        return true;
+	      }
+	      winHeight = window.innerHeight || window.document.documentElement.clientHeight || window.document.body.clientHeight;
+
+	      var ratio = floatFormat($content.height() / winHeight, 2);
+	      //var panelHeight = Math.ceil((winHeight - divHeight) * ratio);
+	      var panelHeight = Math.round((winHeight - divHeight) * ratio);
+
+	      $("#content").css({
+	        "min-height": panelHeight
+	      });
+	      $("#div_vertical").css({
+	        "height": panelHeight
+	      });
+	      $("#LeftPanel").css({
+	        "height": panelHeight - divHeight
+	      });
+
+	      // var content_width = $("#content").width();
+	      var content_width = $("body").width(); // DebToolの表示時に正しい値が取れない為
+	      var RightPanelWidth = content_width - $("#LeftPanel").width() - $("#div_vertical").width() - border_width_x4;
+	      if (_verticalResize) {
+	        $("#RightPanel").css({
+	          "height": panelHeight - divHeight
+	        });
+	      } else {
+	        $("#RightPanel").css({
+	          "height": panelHeight - divHeight,
+	          "width": RightPanelWidth
+	        });
+	        // 念のため
+	        var LeftPanelWidth = content_width - $("#RightPanel").width() - $("#div_vertical").width() - border_width_x4;
+	        $("#LeftPanel").css({
+	          "width": LeftPanelWidth
+	        });
+	      }
+	      $("#content-footer").height(winHeight - (headerHeight + panelHeight + footer_margin_bottom));
+	    };
+	    $('#btnShowFooter a').on('click', function () {
+	      footerShow(true);
+	      setTimeout(function () {
+	        // skipW = true;
+	        // window.resize();
+	        resize(true);
+	      }, 300);
+	    });
+	    $('#btnShowRight a').on('click', function () {
+	      leftPanelShow(true);
+	      setTimeout(function () {
+	        resize();
+	      }, 300);
+	    });
+	    $('#btnShowLeft a').on('click', function () {
+	      rightPanelShow(true);
+	      setTimeout(function () {
+	        resize();
+	      }, 300);
+	    });
+	    var leftPanelShow = function leftPanelShow(isShow) {
+	      setTimeout(function (isShow) {
+	        if (!isShow) {
+	          $("#div_vertical, #RightPanel").hide();
+	          $("#LeftPanel").css({ width: '100%' });
+	          $('#btnShowRight').css({ display: 'inline-block' });
+	          $('html').addClass('hideRight');
+	        } else {
+	          $("#LeftPanel").css({ width: '80%' });
+	          $("#RightPanel").css({ width: '20%' });
+	          $("#div_vertical, #RightPanel").show();
+	          $('#btnShowRight').hide();
+	          $('html').removeClass('hideRight');
+	        }
+	      }, 300, isShow);
+	    };
+	    var rightPanelShow = function rightPanelShow(isShow) {
+	      setTimeout(function (isShow) {
+	        if (!isShow) {
+	          $("#div_vertical, #LeftPanel").hide();
+	          $("#RightPanel").css({ width: '100%' });
+	          $('#btnShowLeft').css({ display: 'inline-block' });
+	          $('html').addClass('hideLeft');
+	        } else {
+	          $("#RightPanel").css({ width: '80%' });
+	          $("#LeftPanel").css({ width: '20%' });
+	          $("#div_vertical, #LeftPanel").show();
+	          $('#btnShowLeft').hide();
+	          $('html').removeClass('hideLeft');
+	        }
+	      }, 300, isShow);
+	    };
+
+	    var footerShow = function footerShow(isShow) {
+	      setTimeout(function (isShow) {
+	        if (!isShow) {
+	          $("#content-footer").hide();
+	          $("#content").css({ minHeight: '', height: '100%' });
+	          $("#LeftPanel, #RightPanel").css({ height: '100%' });
+	          $('#btnShowFooter').css({ display: 'inline-block' });
+	          $('html').addClass('hideFooter');
+	        } else {
+	          $("#content-footer").show();
+	          $("#content").css({ minHeight: '80%', height: '80%' });
+	          $("#LeftPanel, #RightPanel").css({ height: '80%' });
+	          $('#btnShowFooter').hide();
+	          $('html').removeClass('hideFooter');
+	        }
+	      }, 300, isShow);
+	    };
+
+	    $.resizable = function (resizerID, vOrH) {
+	      //console.log("resizable");
+	      $('#' + resizerID).bind("mousedown", function (e) {
+	        var start = vOrH === 'v' ? e.pageX : e.pageY;
+	        var height = $content.height();
+	        var leftwidth = $('#' + resizerID).prev().width();
+	        var rightwidth = $('#' + resizerID).next().width();
+
+	        var mouseMove = function mouseMove(e) {
+	          var end = vOrH === 'v' ? e.pageX : e.pageY;
+	          if (vOrH == 'h') {
+	            // タテ
+	            var newHeight = height + (end - start);
+	            if (newHeight > content_margin_side || newHeight < 0) {
+	              $content.height(newHeight);
+
+	              $("#content").css({
+	                "min-height": newHeight
+	              });
+	              $("#div_vertical").css({
+	                "height": newHeight
+	              });
+	              $("#LeftPanel, #RightPanel").css({
+	                "height": newHeight - divHeight
+	              });
+	              $("#content-footer").height(winHeight - (headerHeight + newHeight + footer_margin_bottom));
+	            }
+	          } else {
+	            // ヨコ
+	            var newLeftWidth = leftwidth + (end - start);
+	            var newRightWidth = rightwidth - (end - start);
+
+	            // //console.log(newRightWidth);
+	            // 段落ち対策
+	            if (content_margin_side < newLeftWidth && newRightWidth > content_margin_side) {
+	              $('#' + resizerID).prev().width(newLeftWidth);
+	              $('#' + resizerID).next().width(newRightWidth);
+	            } else {
+	              // //console.log("holizontal-over");
+	            }
+	          }
+	        };
+	        document.addEventListener('mouseup', function (e) {
+	          // var start = vOrH === 'v' ? e.pageX : e.pageY;
+	          // var height = $content.height();
+	          // var leftwidth = $('#' + resizerID).prev().width();
+	          // var rightwidth = $('#' + resizerID).next().width();
+	          // var end = vOrH === 'v' ? e.pageX : e.pageY;
+	          // //console.log('mouseup', e.pageX , e.pageY)
+
+	          if ($content.height() > $(window).height() - $('#content-header').height() - 40) {
+	            // //console.log("vertical-over");
+	            e.preventDefault(); // drag キャンセル
+	            footerShow(false);
+	          }
+	          var newRightWidth = $('#div_right').prev().width();
+	          var newLeftWidth = $('#div_left').prev().width();
+
+	          e.preventDefault(); // drag キャンセル
+	          // //console.log('newLeftWidth',newLeftWidth,"newRightWidth", newRightWidth, "content_margin_side", content_margin_side);
+	          if (newRightWidth <= content_margin_side + 20) {
+	            leftPanelShow(false);
+	          } else if (newLeftWidth <= content_margin_side + 20) {
+	            rightPanelShow(false);
+	          }
+	          // //console.log("holizontal-over");
+
+	          document.removeEventListener("mousemove", mouseMove);
+	          document.removeEventListener("mouseup", this);
+	        });
+	        document.addEventListener('mousemove', mouseMove);
+	      });
+	    };
+
+	    /**
+	    * navigation
+	    */
+	    $(function () {
+	      var $nav = $("#navigation"),
+	          $slideLine = $("#slide-line"),
+	          $currentItem = $(".current-item");
+
+	      $(function () {
+	        // Menu has active item
+	        if ($currentItem[0]) {
+	          var _$this = $nav.find('li.current-item');
+	          $slideLine.css({
+	            "width": _$this.width(),
+	            "left": _$this.position().left + parseInt(_$this.css('marginLeft'))
+	          });
+	        }
+
+	        // Underline transition
+	        $($nav).find("li").hover(
+	        // Hover on
+	        function () {
+	          $slideLine.css({
+	            "width": $(this).width(),
+	            "left": $(this).position().left + parseInt($(this).css('marginLeft'))
+	          });
+	        },
+	        // Hover out
+	        function () {
+	          if ($currentItem[0]) {
+	            // Go back to current
+	            var _$this = $nav.find('li.current-item');
+	            $slideLine.css({
+	              "width": _$this.width(),
+	              "left": _$this.position().left + parseInt(_$this.css('marginLeft'))
+	            });
+	          } else {
+	            // Disapear
+	            $slideLine.width(0);
+	          }
+	        });
+	      });
+
+	      // 横並び間隔揃え
+	      var max_w = 0;
+	      $.when($.each($('#navigation li'), function () {
+	        var w = $(this).width();
+	        max_w = max_w < $(this).width() ? w : max_w;
+	      })).done(function () {
+	        // 最大幅
+	        // //console.log(max_w);
+	        var new_w = max_w + 20;
+	        $.each($('#navigation li'), function () {
+	          var side = new_w - $(this).width() / 2;
+	          $(this).css({ marginLeft: side + 'px', marginRight: side + 'px' });
+	        });
+	        //   margin-right: 45px;
+	      });
+
+	      if ("onhashchange" in window) {
+	        console.log("お使いのブラウザは hashchange イベントをサポートしています");
+	      }
+
+	      function locationHashChanged() {
+	        //console.log(location.url);
+	      }
+
+	      window.onhashchange = locationHashChanged;
+	    });
+	  }
+	};
+	module.exports = exports['default'];
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(105)))
+
+/***/ },
 /* 136 */
 /***/ function(module, exports) {
 
-	module.exports = "<p v-show=\"loading\" style=\"color:red\">loading...</p><div class=\"main\"><div id=\"content-header\"><ul class=\"header-menu nav nav-tabs\"><!-- 一番最初に表示したいページに.is-current--><nav id=\"navigation\"><ul><li class=\"current-item\"><a v-link=\"/\">通常設定</a></li><li><a v-link=\"/foo\">処理／実行</a></li><li><a v-link=\"/bar/1\">開発</a></li><li><a v-link=\"/ggg\">サポート</a></li></ul>  <span id=\"slide-line\"></span></nav></ul></div><div id=\"content\" style=\"\"><div id=\"LeftPanel\" style=\"\" class=\"Panel\"><div id=\"div_A\" class=\"window top\"><router-view v-transition=\"test\" transition-mode=\"out-in\" class=\"view\"></router-view><div id=\"btnShowRight\"><a><span class=\"triangle-left\"></span></a></div></div><div id=\"div_left\" class=\"handler_horizontal\"></div></div><div id=\"div_vertical\" class=\"handler_vertical\"></div><div id=\"RightPanel\" style=\"\" class=\"Panel\"><div id=\"div_C\" class=\"window top\"><div id=\"btnShowLeft\"><a><span class=\"triangle-right\"></span></a></div></div><div id=\"div_right\" class=\"handler_horizontal\"></div></div><div id=\"btnShowFooter\"><a><span class=\"triangle-top\"></span></a></div></div><div id=\"content-footer\" style=\"\"><div class=\"consolePanelMenu\"><div role=\"group\" aria-label=\"...\" class=\"btn-group-sm console-btn-group\"><a onclick=\"Console.clear();\" class=\"u-mr10\">バッファクリア</a><a onclick=\"App.toggleDevTools();\" class=\"u-mr10\">Developer Tools</a></div></div><div id=\"consolePanel\"><div class=\"layer-wrap\"><div class=\"layer-panel\"><!-- 設定--><div class=\"m-console div-textarea\"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div></div></div></div>";
+	module.exports = "<p v-show=\"loading\" style=\"color:red\">loading...</p><div class=\"main\"><div id=\"content-header\"><ul class=\"header-menu nav nav-tabs\"><!-- 一番最初に表示したいページに.is-current--><nav id=\"navigation\"><ul><li class=\"current-item\"><a v-link=\"/\">通常設定</a></li><li><a v-link=\"/foo\">処理／実行</a></li><li><a v-link=\"/bar/1\">開発</a></li><li><a v-link=\"/ggg\">サポート</a></li></ul>  <span id=\"slide-line\"></span></nav></ul></div><div id=\"content\" style=\"\"><div id=\"LeftPanel\" style=\"\" class=\"Panel\"><div id=\"div_A\" class=\"window top\"><router-view v-transition=\"test\" transition-mode=\"out-in\" class=\"view\"></router-view><div id=\"btnShowRight\"><a><span class=\"triangle-left\"></span></a></div></div><div id=\"div_left\" class=\"handler_horizontal\"></div></div><div id=\"div_vertical\" class=\"handler_vertical\"></div><div id=\"RightPanel\" style=\"\" class=\"Panel\"><div id=\"div_C\" class=\"window top\"><div id=\"rightContent\"></div></div><div id=\"div_right\" class=\"handler_horizontal\"></div></div><div id=\"btnShowFooter\"><a><span class=\"triangle-top\"></span></a></div></div><div id=\"content-footer\" style=\"\"><div class=\"consolePanelMenu\"><div role=\"group\" aria-label=\"...\" class=\"btn-group-sm console-btn-group\"><a onclick=\"Console.clear();\" class=\"u-mr10\">バッファクリア</a><a onclick=\"App.toggleDevTools();\" class=\"u-mr10\">Developer Tools</a></div></div><div id=\"consolePanel\"><div class=\"layer-wrap\"><div class=\"layer-panel\"><!-- 設定--><div class=\"m-console div-textarea\"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div></div></div></div>";
 
 /***/ }
 /******/ ]);

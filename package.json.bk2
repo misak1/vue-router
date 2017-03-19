@@ -1,0 +1,48 @@
+{
+  "name": "electron-regexp-editor",
+  "version": "1.0.0",
+  "description": "複数の正規表現置換をリアルタイムに実行してくれるエディタです。",
+  "main": "main.js",
+  "config": {
+    "appname": "REE",
+    "company": "",
+    "appfilename": "REE",
+    "copyright": "&copy; 2016"
+  },
+  "dependencies": {
+    "electron-json-storage": "^2.1.0",
+    "electron-prebuilt": "^1.4.13",
+    "electron-search-text": "^0.3.0",
+    "electron-workers": "^1.10.0",
+    "mkdirp": "^0.5.1",
+    "open": "^0.0.5",
+    "path": "^0.12.7",
+    "superagent": "^3.3.1"
+  },
+  "devDependencies": {
+    "clean-css": "^3.4.23",
+    "npm-run-all": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build:darwin": "electron-packager . REE --out=bin --overwrite --platform=darwin --arch=x64 --version=1.4.13 --icon=images/app.icns",
+    "build:win32": "electron-packager . REE --out=bin --overwrite --platform=win32 --arch=x64 --version=1.4.13 --icon=images/app.ico",
+    "build": "npm-run-all build:*",
+    "css:main": "cleancss css/main.css",
+    "css:materialize": "cleancss css/materialize.css",
+    "css:suggest": "cleancss css/suggest.css",
+    "css": " npm-run-all css:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misak1/electron-regexp-editor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/misak1/electron-regexp-editor/issues"
+  },
+  "homepage": "https://github.com/misak1/electron-regexp-editor#readme"
+}

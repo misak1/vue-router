@@ -394,6 +394,9 @@ p(v-show="loading" style="color:red") loading...
     #RightPanel.Panel(style='')
       #div_C.window.top
         #rightContent
+        #btnShowLeft
+          a
+            span.triangle-right
       #div_right.handler_horizontal
     #btnShowFooter
       a
